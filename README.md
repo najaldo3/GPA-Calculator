@@ -1,18 +1,24 @@
-## Getting Started
+# GPA Calculator
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple Java desktop application developed for the Software Construction course.
 
-## Folder Structure
+## Features
+- Add, edit, and delete courses.
+- Calculate GPA using a 4-point or 5-point scale.
+- Automatically update GPA when courses change.
+- Display total credit hours.
+- Validate course information and prevent duplicate courses.
 
-The workspace contains two folders by default, where:
+## Implementation
+The application was developed using Java Swing and follows the Model-View-Controller (MVC) architecture.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+It uses two design patterns:
+- **Singleton:** Maintains one instance of the GPA model.
+- **Observer:** Updates the interface when course information changes.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+The Course class is implemented as an immutable Abstract Data Type (ADT).
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Run
+1. Open the project in VS Code with Java support installed.
+2. Open `src/App.java`.
+3. Click Run to start the application.
